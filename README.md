@@ -15,6 +15,8 @@ This is an example of how to use [colab](https://github.com/twolf789/python-devo
 Build out Python project scaffold:
 
 * Makefile - it keeps track of very complex things, so that we would be able to reproduce them at will.
+(Use `make install` to install the modules that are written in 'requirements.txt').
+
 * requirements.txt
 * test_library.py
 * python_library.py
@@ -23,7 +25,13 @@ Build out Python project scaffold:
 * Microservice
 
 1. Create a virtualenv: `virtualenv ~/.venv`
-2. edit my '~/.bashrc' : `source ~/.venv/Scripts/activate`
+2. edit my '~/.bashrc': `source ~/.venv/Scripts/activate`
+
+After sourcing our new Virtual Environment:
+3. 1) Use `which python` - To make sure we're using the Python Virtualenv that we've just created.
+3. 2) We can use: `pip freeze | less` - using this command, we can check which python modules are installed on our new Python env (There will be 0 at the beginning). This way, we can now download the Python modules that we want for this project without mixing them with our primary Python environment.
+
+
 
 
 ### AWS CloudShell
