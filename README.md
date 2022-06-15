@@ -11,6 +11,17 @@ Create development environment that is cloud-based:
 This is an example of how to use [colab](https://github.com/twolf789/python-devops/blob/main/getting_started_python.ipynb)
 
 ### GitHub Codespaces
+
+Build out Python project scaffold:
+
+* Makefile - it keeps track of very complex things, so that we would be able to reproduce them at will.
+* requirements.txt
+* test_library.py
+* python_library.py
+* Dockerfile
+* command-line-tool
+* Microservice
+
 ### AWS CloudShell
 ### AWS Cloud9
 
