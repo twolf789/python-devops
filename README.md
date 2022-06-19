@@ -15,12 +15,11 @@ This is an example of how to use [colab](https://github.com/twolf789/python-devo
 
 Build out Python project scaffold:
 
-* Makefile - it keeps track of very complex things, so that we would be able to reproduce them at will.
+* [Makefile](https://github.com/twolf789/python-devops/blob/main/Makefile) - it keeps track of very complex things, so that we would be able to reproduce them at will.
 (Use `make install` to install the modules that are written in 'requirements.txt').
-
-* requirements.txt
-* test_library.py
-* python_library.py
+* [requirements.txt](https://github.com/twolf789/python-devops/blob/main/requirements.txt)
+* [test_library.py](https://github.com/twolf789/python-devops/blob/main/test_devopslib.py)
+* [python_library.py](https://github.com/twolf789/python-devops/tree/main/devopslib)
 * Dockerfile
 * command-line-tool
 * Microservice
