@@ -26,11 +26,14 @@ Build out Python project scaffold:
 
 1. Install virtualenv using pip: `pip install virtualenv` 
 2. Create a virtualenv: `virtualenv ~/.venv`
-3. edit my '~/.bashrc': `source ~/.venv/Scripts/activate`
+3. Edit your '~/.bashrc': `source ~/.venv/Scripts/activate`
+4. Clone project, and then run `make all`
 
-After sourcing our new Virtual Environment:
-4. 1) Use `which python` - To make sure we're using the Python Virtualenv that we've just created.
-4. 2) We can use: `pip freeze | less` - using this command, we can check which python modules are installed on our new Python env (There will be 0 at the beginning). This way, we can now download the Python modules that we want for this project without mixing them with our primary Python environment.
+A little explanation about why using virtual environment:
+After sourcing our new Virtual Environment-
+Use `which python` - To make sure we're using the Python Virtualenv that we've just created.
+We can use: `pip freeze | less` - using this command, we can check which python modules are installed on our new Python env (There will be 0 at the beginning).
+This way, we can now download the Python modules that we want for this project without mixing them with our primary Python environment.
 
 
 
