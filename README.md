@@ -42,7 +42,8 @@ This way, we can now download the Python modules that we want for this project w
 ### AWS Cloud9
 
 
-## Command-Lines Tools
+## Command-Lines Tools and Step Functions
+
 
 ## Microservices
 
