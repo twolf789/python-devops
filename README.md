@@ -35,16 +35,27 @@ Use `which python` - To make sure we're using the Python Virtualenv that we've j
 We can use: `pip freeze | less` - using this command, we can check which python modules are installed on our new Python env (There will be 0 at the beginning).
 This way, we can now download the Python modules that we want for this project without mixing them with our primary Python environment.
 
-
-
-
 ### AWS CloudShell
+Is the CLI of AWS.
+
 ### AWS Cloud9
+Is an environment in AWS -> this whole repo can be cloned to this environment. Makefile makes it easier to set-up all the dependencies.
 
+## Command-Lines Tools
+The 'fire' Python module is being used in the 'hello.py' file and makes it as a CLI tool.
+The tool takes an beverage as an argument and delivers the output. The backend of the 'hello.py' file is located in the file named 'devopslib/randomfruit.py'.
+The command used to run the 'hello.py' file with the 'fire' Python module: `python3 hello.py --beverage milk`.
 
-## Command-Lines Tools and Step Functions
+## Lambda and Step Functions
 <img width="1115" alt="Screen Shot 2022-06-29 at 0 07 53" src="https://user-images.githubusercontent.com/98260230/176636456-9be60ced-9e21-411e-b581-4c3977419207.png">
+As we can see in the picture above, we've created two lambda Python functions. Then we configured Step Functions - The first lambda function, recieves input, process the input, then delivers an output. The output of the first function is being automatically delivered to the second function as an input, it processes it and delivers output.
 
-## Microservices
+## Microservices and API
+The file 'main.py' gets its backend from the 'devopslib/logic.py' file. Using the 'FastAPI' Python library, it makes the code that's located in 'logic.py' to act as an API.
+First, the command `python -m textblob.download_corpora` needs to be run. Then, we can start using the API we created. 'http://127.0.0.1/'.
 
 ## Containerized Continuous Delivery
+<Elaborate about the dockerfile and the amazon ecr integration with AWS App Runner>.
+
+## To run the container and start the application.
+`docker run -p 127.0.0.1:8080:8080 <image-id>`
