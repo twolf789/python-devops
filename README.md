@@ -55,7 +55,24 @@ The file 'main.py' gets its backend from the 'devopslib/logic.py' file. Using th
 First, the command `python -m textblob.download_corpora` needs to be run. Then, we can start using the API we created. 'http://127.0.0.1/'.
 
 ## Containerized Continuous Delivery
-<Elaborate about the dockerfile and the amazon ecr integration with AWS App Runner>.
-
+Elaborate about:
+1. The dockerfile.
+2. The amazon ecr integration with AWS App Runner and the Automatic continous delivery
+3. CodeBuild - which is going to CD Contianers for an AWS App Runner Microservice:
+    - Check the badge checkbox.
+    - Code Source: it will take the updates from
+      GitHub
+    - Webhook: check the Rebuild every time a code
+      change is pushed to this repository
+    - OS: Amazon Linux.
+    - Runtime: Standard.
+    - Image: lastest.
+    - Privileged: enable this flag...
+    - Service role: choose priveleged role that
+      will give us the permission to push the new
+      image changes to the amazon ecr.
+    - Choose: use a buildspec file. 
+    
+    
 ## To run the container and start the application.
 `docker run -p 127.0.0.1:8080:8080 <image-id>`
