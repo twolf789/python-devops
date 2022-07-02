@@ -16,4 +16,3 @@ deploy:
 	docker push 759706068230.dkr.ecr.us-east-1.amazonaws.com/devops-python:latest
 all: install post-install lint test format deploy
 
-	
