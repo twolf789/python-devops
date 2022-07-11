@@ -24,4 +24,9 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Downloading Super-linter log file
+        run: cp '${{ github.workspace }}/super-linter.log' '.github/'
+        shell: bash
+        
           
