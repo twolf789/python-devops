@@ -25,8 +25,23 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Downloading Super-linter log file
-        run: cp '${{ github.workspace }}/super-linter.log' '.github/'
+      - name: Upload Super-linter log file as an artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-superlinter-report
+          path: ${{ github.workspace }}/super-linter.log
+
+  test:
+    name: Display results
+    needs: build
+    runs-on: macOS-latest
+    steps:
+      - name: Download log file (the output of build)
+        uses: actions/download-artifact@v3
+        with:
+          name: code-superlinter-report
+      - name: Print the final result
         shell: bash
-        
-          
+        run: |
+          value=`cat ${{ github.workspace }}/super-linter.log`
+          echo $value
