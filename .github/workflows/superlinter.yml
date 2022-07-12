@@ -1,3 +1,4 @@
+---
 name: Lint Code Base
 # https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions
 on:
