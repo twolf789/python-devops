@@ -44,5 +44,5 @@ jobs:
       - name: Print the final result
         shell: bash
         run: |
-          value=`cat $(${{ github.workspace }}/super-linter.log)`
+          value=$(${{ github.workspace }}/super-linter.log)
           echo $value
