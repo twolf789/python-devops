@@ -1,59 +1,36 @@
 {
-  "version": "2.1.0",
-  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.4.json",
-  "runs": [
-    {
-      "tool": {
-        "driver": {
-          "name": "ESLint"
-        }
-      },
-      "results": [
-        {
-          "ruleId": "no-unused-vars",
-          "level": "error",
-          "message": {
-            "text": "
-                      {
-              "final_spec_coverage": "0 / 12",
-              "rendered_requests": "0 / 12",
-              "rendered_requests_valid_status": "0 / 0",
-              "num_fully_valid": 0,
-              "num_sequence_failures": 0,
-              "num_invalid_by_failed_resource_creations": 0,
-              "total_object_creations": 0,
-              "total_requests_sent": {
-                  "gc": 0,
-                  "main_driver": 0,
-                  "LeakageRuleChecker": 0,
-                  "ResourceHierarchyChecker": 0,
-                  "UseAfterFreeChecker": 0,
-                  "InvalidDynamicObjectChecker": 0,
-                  "PayloadBodyChecker": 0,
-                  "ExamplesChecker": 0
-              },
-              "bug_buckets": {},
-              "reproducible_bug_buckets": {}
+    "version": "2.1.0",
+    "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.4.json",
+    "runs": [
+      {
+        "tool": {
+          "driver": {
+            "name": "ESLint"
           }
-
-            "
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/dev/sarif/sarif-tutorials/samples/Introduction/simple-example.js",
-                  "index": 0
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 5
+        },
+        "results": [
+          {
+            "ruleId": "no-unused-vars",
+            "level": "error",
+            "message": {
+              "text": "{\nfinal_spec_coverage: 0 / 12,\nrendered_requests: 0 / 12,\nrendered_requests_valid_status: 0 / 0,\nnum_fully_valid: 0,\nnum_sequence_failures: 0,\nnum_invalid_by_failed_resource_creations: 0,\ntotal_object_creations: 0,\ntotal_requests_sent: {\n\tgc: 0,\nmain_driver: 0,\nLeakageRuleChecker: 0,\nResourceHierarchyChecker: 0,\nUseAfterFreeChecker: 0,\nInvalidDynamicObjectChecker: 0,\nPayloadBodyChecker: 0,\nExamplesChecker: 0\n},\nbug_buckets: {},\nreproducible_bug_buckets: {}\n}"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "file:///C:/dev/sarif/sarif-tutorials/samples/Introduction/simple-example.js",
+                    "index": 0
+                  },
+                  "region": {
+                    "startLine": 1,
+                    "startColumn": 5
+                  }
                 }
               }
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+            ]
+          }
+        ]
+      }
+    ]
+  }
